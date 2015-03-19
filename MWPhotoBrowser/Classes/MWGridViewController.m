@@ -124,14 +124,7 @@
 
 - (CGFloat)getColumns {
 #ifdef __IPHONE_8_0
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        if (CGRectGetHeight(self.view.frame) > CGRectGetWidth(self.view.frame)) {
-            return _columns;
-        } else {
-            return _columnsL;
-        }
-        
-    } else if (self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassRegular) {
+    if (CGRectGetHeight(self.view.frame) > CGRectGetWidth(self.view.frame)) {
         return _columns;
     } else {
         return _columnsL;
@@ -147,14 +140,7 @@
 
 - (CGFloat)getMargin {
 #ifdef __IPHONE_8_0
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        if (CGRectGetHeight(self.view.frame) > CGRectGetWidth(self.view.frame)) {
-            return _margin;
-        } else {
-            return _marginL;
-        }
-        
-    } else if (self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassRegular) {
+    if (CGRectGetHeight(self.view.frame) > CGRectGetWidth(self.view.frame)) {
         return _margin;
     } else {
         return _marginL;
@@ -170,14 +156,7 @@
 
 - (CGFloat)getGutter {
 #ifdef __IPHONE_8_0
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        if (CGRectGetHeight(self.view.frame) > CGRectGetWidth(self.view.frame)) {
-            return _gutter;
-        } else {
-            return _gutterL;
-        }
-        
-    } else if (self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassRegular) {
+    if (CGRectGetHeight(self.view.frame) > CGRectGetWidth(self.view.frame)) {
         return _gutter;
     } else {
         return _gutterL;
